@@ -17,3 +17,4 @@ with open("file1.pdf", 'rb') as file:  # 'rb' = read binary and its necessary
     for _file in file_tobe_merged:  # itterate over files tobe merged
         merger.append(_file)  # append files in the merger
     merger.write("combined.pdf")  # write whats in merger in combined.pdf
+    merger.close()
